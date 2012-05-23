@@ -1,0 +1,11 @@
+{% block confirmDialogbutton %}
+{% spaceless %}
+        <a
+        {% block confirmDialogButtonAttributes %}
+            {% for  key, arg in arguments %}
+                {{ key }}="{{ arg }}" 
+            {% endfor %}                
+        {% endblock %}
+        >{{ arguments.linkText }}</a>
+{% endspaceless %}
+{% endblock %}

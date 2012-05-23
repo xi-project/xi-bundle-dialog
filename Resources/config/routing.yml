@@ -1,0 +1,3 @@
+xi_dialog_delete:
+    pattern:   /dialog/delete
+    defaults: { _controller: XiDialogBundle:Dialog:delete }

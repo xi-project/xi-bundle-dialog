@@ -1,0 +1,6 @@
+services:            
+    confirmdialog.twig.extension:
+        class: Xi\Bundle\DialogBundle\Twig\Extensions\ConfirmDialog
+        arguments: ["@twig", "@router", "xi_dialog_delete", "XiDialogBundle:Dialog:confirm.html.twig", {class: 'confirm-dialog'}]
+        tags:
+            -  { name: twig.extension }
