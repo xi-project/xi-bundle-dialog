@@ -11,7 +11,38 @@ provides ajax interface and error handling. Dialogbundle dialogs can gracefully 
 xi-bundle-ajax
 * https://github.com/xi-project/xi-bundle-ajax
 
+## Installing
 
+### deps -file
+```
+[XiAjaxBundle]
+    git=http://github.com/xi-project/xi-bundle-ajax.git
+    target=/bundles/Xi/Bundle/AjaxBundle
+
+[XiDialogBundle]
+    git=http://github.com/xi-project/xi-bundle-dialog.git
+    target=/bundles/Xi/Bundle/DialogBundle
+```
+
+### autoload.php file
+```php
+<?php
+'Xi\\Bundle'       => __DIR__.'/../vendor/bundles',
+?>
+```
+### appKernel.php -file
+```php
+<?php
+            new Xi\Bundle\AjaxBundle\XiAjaxBundle(),
+            new Xi\Bundle\DialogBundle\XiDialogBundle(),
+ ?>
+```   
+### routing.yml -file
+```yml
+XiDialogBundle:
+    resource: "@XiDialogBundle/Resources/config/routing.yml"
+    prefix:   /
+``` 
 
 ## Dialog
 
