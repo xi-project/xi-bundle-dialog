@@ -89,4 +89,4 @@ Confirm button copies it's href attribure from the element that launches the dia
 
 Confirm dialog assumes that you have AjaxBundle:AjaxElement up and running. Basically you just need to put following line
 in your coffeescrpit bootstrap: `new App.AjaxElement.Default '.ajax-link'`. 
-Check xi-bundle-ajax * https://github.com/xi-project/xi-bundle-ajax for more information.
+Check xi-bundle-ajax https://github.com/xi-project/xi-bundle-ajax for more information.
