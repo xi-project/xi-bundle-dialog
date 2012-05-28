@@ -1,0 +1,6 @@
+xi:
+  confirmdialog:
+    delete:
+      are_you_sure: 'Haluatko varmasti poistaa kohteen?'
+      im_sure: 'Poista'
+      cancel: 'Peruuta'
