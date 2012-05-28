@@ -1,0 +1,6 @@
+xi:
+  confirmdialog:
+    delete:
+      are_you_sure: 'Are you sure you want to delete the item?'
+      im_sure: 'Delete'
+      cancel: 'Cancel'
