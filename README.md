@@ -86,3 +86,7 @@ Confirm button copies it's href attribure from the element that launches the dia
 {{ sba_confirmdialog_render('url_to_what_shoud_be_deleted), {'header': 'header_of_yours', 'linkText': 'text_for_link' 'some_attribute': 'some_attribute_of_yours'}}
 
 ```
+
+Confirm dialog assumes that you have AjaxBundle:AjaxElement up and running. Basically you just need to put following line
+in your coffeescrpit bootstrap: `new App.AjaxElement.Default '.ajax-link'`. 
+Check xi-bundle-ajax * https://github.com/xi-project/xi-bundle-ajax for more information.
