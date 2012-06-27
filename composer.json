@@ -8,7 +8,7 @@
         "symfony/form": "=v2.0.14",
         "symfony/dependency-injection": "=v2.0.14",
         "xi/ajax-bundle": "dev-master",
-        "twig/twig": "1.*",
+        "twig/twig": "1.*"
     },
     "autoload": {
         "psr-0": {
