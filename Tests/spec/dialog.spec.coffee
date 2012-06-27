@@ -1,8 +1,6 @@
-if require?
-    require "../../../JsTestBundle/Resources/config/init-test.coffee"
-
-    # file to test    
-    require "../../Resources/coffee/dialog.coffee"
+require "../../../JsTestBundle/Resources/config/init.coffee"
+# file to test    
+require "../../Resources/coffee/dialog.coffee"
 
 describe "app dialog", ->
 
