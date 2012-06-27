@@ -14,6 +14,6 @@
         "psr-0": {
             "Xi\\Bundle\\DialogBundle": ""
         }
-    }   
-    
+    },
+    "target-dir": "Xi/Bundle/DialogBundle"
 }
