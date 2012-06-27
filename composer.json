@@ -1,0 +1,19 @@
+{
+    "name": "xi/dialog-bundle",
+    "description": "Xi Dialog bundle is basic jQuery dialog with ajax features from xi/ajax-bundle",
+    "keywords": ["dialog", "ajax"],
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/framework-bundle": "=v2.0.14",
+        "symfony/form": "=v2.0.14",
+        "symfony/dependency-injection": "=v2.0.14",
+        "xi/ajax-bundle": "dev-master",
+        "twig/twig": "1.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "Xi\\Bundle\\DialogBundle": ""
+        }
+    }   
+    
+}
