@@ -1,5 +1,10 @@
 require "./init.coffee"
 # file to test    
+
+ajaxBundleCoffeeDir = "../../vendor/xi/ajax-bundle/Xi/Bundle/AjaxBundle/Resources/coffee/"
+
+require ajaxBundleCoffeeDir + 'ajax-abstract-logic.coffee'
+require ajaxBundleCoffeeDir + 'ajax-loader.coffee'
 require "../../Resources/coffee/dialog.coffee"
 
 describe "app dialog", ->
