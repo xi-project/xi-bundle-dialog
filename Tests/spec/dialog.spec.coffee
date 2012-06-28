@@ -1,5 +1,5 @@
 if require?
-    require "../../../JsTestBundle/Resources/config/init-test.coffee"
+    require "./init-test.coffee"
 
     # file to test    
     require "../../Resources/coffee/dialog.coffee"
