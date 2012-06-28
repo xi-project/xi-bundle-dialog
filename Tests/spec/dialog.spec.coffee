@@ -1,4 +1,4 @@
-require "../../../JsTestBundle/Resources/config/init.coffee"
+require "./init.coffee"
 # file to test    
 require "../../Resources/coffee/dialog.coffee"
 
