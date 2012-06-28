@@ -1,8 +1,11 @@
-if require?
-    require "./init-test.coffee"
+require "./init.coffee"
+# file to test    
 
-    # file to test    
-    require "../../Resources/coffee/dialog.coffee"
+ajaxBundleCoffeeDir = "../../vendor/xi/ajax-bundle/Xi/Bundle/AjaxBundle/Resources/coffee/"
+
+require ajaxBundleCoffeeDir + 'ajax-abstract-logic.coffee'
+require ajaxBundleCoffeeDir + 'ajax-loader.coffee'
+require "../../Resources/coffee/dialog.coffee"
 
 describe "app dialog", ->
 
