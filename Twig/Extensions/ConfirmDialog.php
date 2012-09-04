@@ -3,7 +3,7 @@
 namespace Xi\Bundle\DialogBundle\Twig\Extensions;
 
 use \Twig_Environment,
-    Symfony\Component\Routing\Router;
+    Symfony\Component\Routing\RouterInterface;
 
 /**
  * Author: Henri Vesala <henri.vesala@soprano.fi>
@@ -18,7 +18,7 @@ class ConfirmDialog extends \Twig_Extension
     protected $twig;
     
     /**
-     * @var Router
+     * @var RouterInterface
      */
     protected $router;
     
@@ -43,9 +43,13 @@ class ConfirmDialog extends \Twig_Extension
     protected $href;
     
     /**
-     * @param Twig_Environment $twig 
+     * @param Twig_Environment $twig
+     * @param RouterInterface $router
+     * @string $route
+     * @string $template
+     * @array $template
      */
-    public function __construct(Twig_Environment $twig, Router $router, $route, $template, $defaultArguments = array())
+    public function __construct(Twig_Environment $twig, RouterInterface $router, $route, $template, $defaultArguments = array())
     {
         $this->router  = $router;
         $this->twig    = $twig;
