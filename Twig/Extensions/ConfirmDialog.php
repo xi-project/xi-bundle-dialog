@@ -43,7 +43,11 @@ class ConfirmDialog extends \Twig_Extension
     protected $href;
     
     /**
-     * @param Twig_Environment $twig 
+     * @param Twig_Environment $twig
+     * @param RouterInterface $router
+     * @string $route
+     * @string $template
+     * @array $template
      */
     public function __construct(Twig_Environment $twig, RouterInterface $router, $route, $template, $defaultArguments = array())
     {
