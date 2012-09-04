@@ -14,7 +14,7 @@
         "symfony/framework-bundle": "2.1.*",
         "symfony/form": "2.1.*",
         "symfony/dependency-injection": "2.1.*",
-        "xi/ajax-bundle": "2.1.x-dev",
+        "xi/ajax-bundle": "dev-master",
         "twig/twig": "1.*"
     },
     "autoload": {
