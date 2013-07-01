@@ -11,10 +11,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "symfony/framework-bundle": "2.2.*",
-        "symfony/form": "2.2.*",
-        "symfony/dependency-injection": "2.2.*",
-        "xi/ajax-bundle": "2.2.*",
+        "symfony/framework-bundle": "2.3.*",
+        "symfony/form": "2.3.*",
+        "symfony/dependency-injection": "2.3.*",
+        "xi/ajax-bundle": "2.3.*",
         "twig/twig": ">=1.11.0,<2.0"
     },
     "autoload": {
