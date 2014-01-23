@@ -24,7 +24,7 @@ class App.Dialog
             @errorizers.push(new App.FatalErrorizer.Default)
 
         self = @
-        $(@element).live('click', (event) ->
+        $('body').on('click', @element, (event) ->
             dialog = basedialog.clone()
             loader.start()
 
@@ -104,7 +104,7 @@ class App.ConfirmDialog extends App.Dialog
         $confirmBtn = $('[data-id|="confirm-delete"] > [data-id|="confirm"]')
         $confirmBtn.attr('href', $(element).attr('href'))
 
-        $('[data-id|="confirm-delete"] > [data-id|="cancel"]').live('click', =>
+        $('body').on('click', '[data-id|="confirm-delete"] > [data-id|="cancel"]', (e) =>
             $(dialog).dialog('close')
             return false
         )
