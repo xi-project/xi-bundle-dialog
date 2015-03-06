@@ -18,7 +18,7 @@ class App.Dialog
         if !loader
             loader = new App.AjaxLoader.Default()
 
-        if !errorizers  or !errorizers.length
+        if !@errorizers  or !@errorizers.length
             @errorizers = [new App.FatalErrorizer.Default]
         else
             @errorizers.push(new App.FatalErrorizer.Default)
@@ -100,7 +100,7 @@ class App.ConfirmDialog extends App.Dialog
     getUri: (element) ->
         $(element).data('href')
 
-    loadComplete: (dialog, element) -> 
+    loadComplete: (dialog, element) ->
         $confirmBtn = $('[data-id|="confirm-delete"] > [data-id|="confirm"]')
         $confirmBtn.attr('href', $(element).attr('href'))
 
